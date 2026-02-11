@@ -52,7 +52,8 @@ def compute_sales_total(sales, prices):
             continue
 
         if not isinstance(qty, (int, float)):
-            msg = f"Invalid quantity '{qty}' for product '{product}' (ID: {sid})"
+            msg = (f"Invalid quantity '{qty}' for product "
+                   f"'{product}' (ID: {sid})")
             lines.append(msg)
             print(msg)
             continue
