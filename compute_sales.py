@@ -91,7 +91,7 @@ def main():
         sys.exit(1)
 
     prices = build_price_map(catalogue)
-    total, text = compute_sales_total(sales, prices)
+    _, text = compute_sales_total(sales, prices)
 
     elapsed = time.time() - start_time
     full_output = f"{text}\nExecution time: {elapsed:.4f} seconds"
